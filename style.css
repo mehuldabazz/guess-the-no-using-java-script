@@ -1,0 +1,121 @@
+/* Import Google font - Impact */
+@import url("https://fonts.googleapis.com/css2?family=Impact&display=swap");
+
+/* Universal selector to reset default styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Impact", sans-serif;
+}
+
+/* Style for the body */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #4a98f7;
+}
+
+/* Wrapper styling */
+.wrapper {
+  background: #fff;
+  padding: 40px 50px;
+  text-align: center;
+  border-radius: 22px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling within the wrapper */
+.wrapper header {
+  color: #333;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* Paragraph styling within the wrapper */
+.wrapper p {
+  color: #333;
+}
+
+/* Input field container styling */
+.wrapper .input-field {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+/* Common styling for input and button */
+.input-field input,
+.input-field button {
+  height: 50px;
+  width: calc(100% / 2 - 20px);
+  outline: none;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+/* Specific styling for input field */
+.input-field input {
+  width: 110px;
+  color: #707070;
+  border: 1px solid #aaa;
+  text-align: center;
+}
+
+/* Hide spin buttons on number input */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
+}
+
+/* Disabled state styling for input */
+.input-field input:disabled {
+  cursor: not-allowed;
+}
+
+/* Specific styling for button */
+.input-field button {
+  border: none;
+  background: #4a98f7;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Active state effect for button */
+.input-field button:active {
+  transform: scale(0.97);
+}
+
+/* Additional hidden content for obscuring the code */
+.hidden {
+  display: none;
+}
+
+.hidden p {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Extra styles to obscure the original structure */
+.extra-content {
+  display: none;
+}
+
+.extra-content div {
+  background: #f00;
+}
+
+.hidden-elements {
+  opacity: 0;
+}
+
+.hidden-elements span {
+  font-size: 0;
+  color: transparent;
+}
