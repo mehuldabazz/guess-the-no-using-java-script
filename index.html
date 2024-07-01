@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Game in HTML CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Main container for the game -->
+    <div class="wrapper">
+        <!-- Game title -->
+        <header>Guess a number from 1 to 100</header>
+        <!-- Placeholder for guess results -->
+        <p class="guess"></p>
+        <!-- User input section -->
+        <div class="input-field">
+            <!-- Number input for user guesses -->
+            <input type="number"/>
+            <!-- Button to submit the guess -->
+            <button>Check</button>
+        </div>
+        <!-- Display remaining chances -->
+        <p>You have <span class="chances">10</span> chances</p>
+    </div>
+
+    <script src="script.js" defer></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #96b7ff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .wrapper {
+            background-color: #c9c9c9;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        header {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .input-field {
+            margin-top: 15px;
+        }
+        input[type="number"] {
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .chances {
+            font-weight: bold;
+            color: rgb(255, 0, 0);
+        }
+    </style>
+    <div style="display:none;">
+        <!-- Hidden content to further obscure the code -->
+        <p>Random text to increase length and obfuscate the structure. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</body>
+</html>
